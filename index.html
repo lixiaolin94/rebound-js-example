@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Rebound JS Example</title>
+  <script src="js/rebound.min.js"></script>
+  <script src="js/util.js"></script>
+  <script src="js/main.js"></script>
+  <style>
+    #graph-canvas,
+    #obj {
+      width: 300px;
+      height: 300px;
+    }
+
+    #obj {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      background: #1194e7;
+    }
+  </style>
+</head>
+
+<body>
+  <canvas id="graph-canvas" width="600" height="600"></canvas>
+  <div id="obj">Press and hold</div>
+  <div>
+    <div>
+      <label for="tension">tension : <span id="tension_value">40</span></label>
+      <input type="range" id="tension" name="tension" min="1" max="100" value="40" />
+    </div>
+    <div>
+      <label for="friction">friction : <span id="friction_value">3</span></label>
+      <input type="range" id="friction" name="friction" min="1" max="30" value="3" />
+    </div>
+  </div>
+</body>
+
+</html>
